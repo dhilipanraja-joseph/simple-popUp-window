@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dialog Box</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="dialog-style.css" />
+    </head>
+	<body>
+		<div class="s-button popButton" onclick="popDialog()">PopUP</div>
+		<div id="popup" class="dialog-background">
+			<div id="popupBox" class="dialog-container">
+				<div class="dialog-header">
+					Dialog Header
+				</div>
+				<div class="dialog-context">
+					Dialog Context
+				</div>
+				<div class="dialog-footer">
+					<div class="s-button" onclick="closeDialog()">
+						close
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>	
+	<script>
+		function popDialog(){
+			document.getElementById('popup').style.visibility="visible";
+		}
+		function closeDialog(){
+			document.getElementById('popup').style.visibility="hidden";
+		}
+	</script>
+</html>
